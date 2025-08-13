@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ATM — Home</title>
+  <style>
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:#f5f7fb}
+    .wrap{max-width:800px;margin:60px auto;padding:32px;background:#fff;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08);text-align:center}
+    h1{margin:0 0 8px}
+    p{color:#555;margin:0 0 24px}
+    .btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none}
+    .primary{background:#2563eb;color:#fff}
+    .outline{border:1px solid #cbd5e1;color:#111;background:#fff;margin-left:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>💳 Simple ATM</h1>
+    <p>Login with your PIN to access deposit, withdraw and balance features.</p>
+    <a class="btn primary" href="{{ url_for('login') }}">Login</a>
+    <a class="btn outline" href="#" onclick="alert('Please login first!')">Open Dashboard</a>
+  </div>
+</body>
+</html>
